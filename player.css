@@ -1,0 +1,351 @@
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: #d7d7d7;
+    width: 100%;
+		 height: 100vh;
+		 font-family: 'Poppins', 'Roboto', sans-sarif;
+}
+@font-face
+{
+    font-family: 'Trade Gothic Bold Condensed No. 20';
+    src: url("fonts/trade.otf") format("opentype");
+}
+@font-face
+{
+    font-family: 'Poppins';
+    src: url("fonts/Poppins.ttf") format("truetype");
+}
+@font-face
+{
+    font-family: 'Roboto';
+    src: url("fonts/Roboto.ttf") format("truetype");
+}
+@font-face
+{
+    font-family: 'JosefinSans';
+    src: url("fonts/JosefinSans.ttf") format("truetype");
+}
+@font-face
+{
+    font-family: 'Montserrat';
+    src: url("fonts/Montserrat.ttf") format("truetype");
+}
+.head
+{
+    height: 60px;
+    width: 100%;
+    position: relative;
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    font-family: 'Trade Gothic Bold Condensed No. 20';
+    letter-spacing: -1.5px;
+}
+.head a img
+{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: absolute;
+}
+.head a h2
+{
+    margin-top: 14px;
+    margin-left: 65px;
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+.search{
+    background: white;
+    position: absolute;
+    border: none;
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    margin-top: 10px;
+    right: 80px;
+    transition: 0.1s;
+    
+}
+.setting{
+    background: white;
+    position: absolute;
+    border: none;
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    margin-top: 10px;
+    right: 20px;
+    transition: 0.1s;
+}
+.head button span
+{
+    font-size: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+.body{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: white;
+    border-radius: 0px;
+    overflow: scroll;
+    scroll-style: none;
+}
+.head .box
+{
+    border: none;
+    border-radius: 20px;
+    width: 30%;
+    height: 35px;
+    margin-top: 13px;
+    position: absolute;
+    right: 140px;
+    color: #0F0F0F;
+    text-align: left;
+    padding-right: 20px;
+    outline: none;
+    padding-left: 20px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+    background: rgba(225,225,225,0.5);
+    transition: 0.5s;
+    font-size: 18px;
+    display: none;
+    font-family: 'Montserrat';
+}
+.head .engine.on .box
+{
+    display: flex;
+}
+.player
+{
+    width: 100%;
+    background: white;            
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(225,225,225,0.9);
+}
+.player h2
+{
+    width: calc(100% - 80px);
+    margin: 10px;
+    padding-left: 25px;
+}
+.category_bar
+{
+    position: relative;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    font-family: 'Montserrat';
+}
+.category_bar a
+{
+    
+}
+.category_bar material-symbols-outlined
+{
+    margin-top: 5px;
+    font-size: 24px;
+    position: relative;
+    padding: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: rgba(225,225,225,0.8);
+    color: black;
+}
+.category_bar button
+{
+    text-align: center;
+    padding: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: box;
+    margin: 10px;
+    margin-right: 0;
+    margin-bottom: 18px;
+    border-radius: 20px;
+    border: none;
+    background: rgba(225,225,225,0.8);    
+    font-family: 'Montserrat';
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+}
+.theme
+{
+    width: 150px;
+    height: 40px;
+    background: rgba(225,225,225,0.5);
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    text-align: left;
+    border-radius: 7px;
+}
+.theme p
+{
+    position: absolute;
+    font-size: 12px;
+    left: 10px;
+    width: 100%;
+    padding-top: 1px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: none;
+}
+.theme_box
+{
+    width: 30px;
+    height: 15px;
+    border: 1.5px solid #dddddd;
+    border-radius: 20px;
+    background: white;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+.bar
+{
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background: #515151;
+    position: absolute;
+    transition: 0.2s;
+}
+.details h3
+{
+    padding: 20px;
+    padding-left: 40px;
+    font-size: 18px;
+}
+.details p
+{
+    padding: 10px;
+    padding-left: 20px;
+    margin: 30px;
+}
+.details .ratings
+{
+    padding: 10px;
+    width: 60px;
+    border-top: 2px solid red;
+    position: relative;
+    top: -100px;
+    left: calc(100% - 90px);
+    background: rgba(0,0,0,0.5);
+}
+.ratings span
+{
+    color: #ffc755;
+}
+.ratings
+{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body.dark .theme_box
+{
+    background: #515151;
+    border: 1.5px solid #242424;
+}
+body.dark .theme
+{
+    background: #272727;
+    color: #bebebe;
+}
+body.dark
+{
+    background: #000;
+}
+body.dark .bar
+{
+    left: 15px;
+    background: white;
+}
+body.dark .head
+{
+    background: #0F0F0F;
+}
+body.dark .body
+{
+    background: #0F0F0F;
+}
+body.dark .head .engine.on .box
+{
+    background: rgba(225,225,225,0.2);
+}
+body.dark .category_bar button:hover
+{
+    color: black;
+    background: white;
+    border: none;
+}
+body.dark .search
+{
+    background: #272727;
+}
+body.dark .setting
+{
+    background: #272727;
+}
+body.dark .search span
+{
+    color: white;
+}
+body.dark .setting span
+{
+    color: white;
+}
+body.dark .theme
+{
+    background: #272727;
+    color: #bebebe;
+}
+body.dark .head a h2
+{
+    color: white;
+}
+body.dark .head .box
+{
+    background: rgba(225,225,225,0.1);
+}
+body.dark .category_bar button:hover
+{
+    color: black;
+    background: white;
+    border: none;
+}
+body.dark .player
+{
+    background: rgba(225,225,225,0.1);
+}
+body.dark .player h2
+{
+    color: white;
+}
+body.dark .category_bar button
+{
+    color: white;
+    background: rgba(225,225,225,0.1);
+}

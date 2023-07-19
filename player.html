@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>anime store</title>
+    <link rel="stylesheet" href="player.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    
+    
+    
+    
+    
+ <!-- upper part --> 
+ 
+ 
+ 
+    <div class="head">
+
+            <a href="home.html"><img src="Images/logo.png" alt=""><h2>AnimeTube</h2></a>
+            <div class="engine">
+            <input class="box" type="search" placeholder="search" id="search" data-search>
+            <button class="search"><span class="material-symbols-outlined">
+search
+</span></button>
+            <button class="setting"><span class="material-symbols-outlined">
+tune
+</span></button>
+            </div>
+        
+    </div>
+       
+       
+       <!-- mainpart -->
+       
+       <div class="body">
+           
+           
+           
+           <div class="player">
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/xU47nhruN-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <div class="nameplace">
+                 <h2>Your Name</h2>
+                 <div class="category_bar">
+        
+                    <button class="download">Download</button>
+                    <button class="share">Share</button>
+                    <button class="save">Save</button>
+        
+                    <span class="theme">
+                     <p>Dark Theme</p>
+                     <span class="theme_box">
+                     <span class="bar"></span>
+                    </span>
+        
+                 </div>
+             </div>
+           </div>
+           
+           
+           <div class="details">
+               
+              <h3>details</h3>
+              <div class="ratings"><span class="material-symbols-outlined"> star_half </span>8.9</div>
+              <p>Two teenagers share a profound, magical connection upon discovering they are swapping bodies. Things manage to become even more complicated when the boy and girl decide to meet in person.</p>
+               
+               <div class="screenshot">
+                   <div class="slide1"></div>
+                   <div class="slide1"></div>
+                   <div class="slide1"></div>
+                   <div class="slide1"></div>
+               </div>
+               
+           </div>
+           
+           
+           
+           
+           
+       </div>
+       <script>
+            let search = document.querySelector(".search");
+								let engine = document.querySelector(".engine");
+								let body = document.querySelector("body");
+								let bar = document.querySelector(".bar");
+								
+								search.onclick = function () {
+												engine.classList.toggle("on");
+								}								
+							  bar.onclick = function () {
+												body.classList.toggle("dark");
+								}
+				</script>
+</body>
+</html>
